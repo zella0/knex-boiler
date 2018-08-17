@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass public/sass/main.scss public/css/style.css -w"
+    "compile:sass": "node-sass public/sass/main.scss public/css/style.css -w",
+    "reseed": "knex migrate:rollback && knex migrate:latest && knex seed:run"
   },
   "keywords": [],
   "author": "",
